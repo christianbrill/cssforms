@@ -1,0 +1,42 @@
+$light: #E2DEDB;
+$dark: #B3ACA7;
+
+*{
+   box-sizing: border-box;
+   font-size: 15px;
+}
+
+body{
+   background: $light;
+
+   form{
+      margin: 50px auto;
+      width: 550px;
+
+      input, textarea{
+         color: $light;
+         margin: 0;
+         padding: 20px;
+         width: 100%;
+      }
+
+      input{
+         background: $light;
+         border: 3px solid $dark;
+      }
+
+      [type='email']{
+         border-top: none;
+      }
+
+      [type='submit']{
+         color: $dark;
+         margin-top: -4px;
+      }
+
+      textarea{
+         background: $dark;
+         border: none;
+      }
+   }
+}
