@@ -1,0 +1,38 @@
+doctype html
+html
+    head
+        title Spider-Man Form
+        meta(charset='utf-8')
+        // Stylesheet
+        link(rel="stylesheet", type="text/css", href="main.min.css")
+        // Google Fonts
+        link(href="https://fonts.googleapis.com/css?family=Bangers", rel="stylesheet")
+
+    body
+        div
+           p Click the labels below to make the fields appear
+
+        form
+              label(for='name' id='forname') Your Name
+              br
+              input(placeholder='Your Name' type='text' name='name' id='name')
+              br
+
+              label(for='email' id='foremail') Your Email
+              br
+              input(placeholder='Your Email' type='email' name='email' id='email')
+              br
+
+              label(for='phone' id='forphone') Your Phone Number
+              br
+              input(placeholder='Your Number' type='tel' name='phone' id='phone')
+              br
+
+              label(for='message' id='formessage') Your Message
+              br
+              textarea(placeholder='Your Message' type='text' name='message' id='message')
+              input(type='submit' name='submit' value='Send')
+
+        // JavaScript + jQuery
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+        script(type="text/javascript", src="script.js")
