@@ -1,0 +1,31 @@
+doctype html
+html
+    head
+        title Desk
+        meta(charset='utf-8')
+
+        // Stylesheet
+        link(rel="stylesheet", type="text/css", href="main.min.css")
+
+        // Font
+        link(href="https://fonts.googleapis.com/css?family=Rock+Salt", rel="stylesheet")
+
+    body
+        div#contact
+           form
+              label(for='name') Your Name
+              br
+              input(type='text', name='name', id='name')
+              br
+
+              label(for='email') Email
+              br
+              input(type='email', name='email', id='email')
+              br
+
+              label(for='message') Your Message
+              br
+              textarea(name='message', id='message')
+              br
+
+              input(type='submit', name='submit', id='submit')
